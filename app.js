@@ -35,3 +35,20 @@ app.listen(port, (error)=>{
 // app.get("/",(req,res)=>{
 //     res.render('.\views\index.html')
 // })
+
+
+// app.get('/users',(req,res)=>{
+//     res.send('User List')
+// })
+
+// app.get('/users/new',(req,res)=>{
+//     res.send('User New Form')
+// })
+
+
+
+
+const userRouter = require("./routes/user")
+
+
+app.use('/users',userRouter)
